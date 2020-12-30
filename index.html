@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/initial.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+
+  <body>
+    <div class="back_to_top">
+      <a href="#intro">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+      </a>
+    </div>
+    <!-- mobile menu button -->
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <label for="gnbcheck" id="gnbbtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <header id="header">
+      <nav id="gnb">
+        <label for="gnbcheck" id="mobile_close_btn"></label>
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#myprofile">MyProfile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#mytool">MyTool</a></li>
+          <li><a href="#myskill">MySkill</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="intro">
+      <article>
+        <h2>About My Portfolio</h2>
+        <p>저의 포트폴리오 사이트입니다.<br>본 사이트는 원페이지방식으로 만들었습니다.</p>
+        <a href="#myprofile" class="button">get started</a>
+      </article>
+    </section>
+    <main>
+      <section id="myprofile">
+        <div class="row">
+          <h2>My Profile</h2>
+          <div class="column">
+            <div class="inner none_type">
+              <img src="img/profile/img02.jpg" alt="my profile img01" class="shadow">
+              <h3>MyoungKyo Seo</h3>
+              <div class="job">web publisher</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="row">
+          <h2>Portfolio</h2>
+          <div class="column">
+            <div class="inner none_type">
+              <a href="https://myoungkyo.github.io/portfoilo-samsung/" target="_blank"><img src="img/portfolio/portfolio01.png" alt="portfolio img01" class="shadow"></a>
+              <h2>portfolio no.1</h2>
+              <p>
+                <strong>description&nbsp;:</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="inner none_type">
+              <a href="https://myoungkyo.github.io/portfolio-/" target="_blank"><img src="img/portfolio/portfolio02.png" alt="portfolio img02" class="shadow"></a>
+              <h2>portfolio no.2</h2>
+              <p>
+                <strong>description&nbsp;:</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="inner none_type">
+              <a href="https://myoungkyo.github.io/portfolio-sass/" target="_blank"><img src="img/portfolio/portfolio03.png" alt="portfolio img03" class="shadow"></a>
+              <h2>portfolio no.3</h2>
+              <p>
+                <strong>description&nbsp;:</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="inner none_type">
+              <a href="#" target="_blank"><img src="img/portfolio/img04.jpg" alt="portfolio img04" class="shadow"></a>
+              <h2>portfolio no.4</h2>
+              <p>
+                <strong>description&nbsp;:</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mytool">
+        <div class="row">
+          <h2>My Tool</h2>
+          <div class="column">
+            <div class="inner none_type">
+              <img src="img/mytool/img01.png" alt="img01">
+              <h3>html5</h3>
+              <p>HTML5는 HTML의 완전한 5번째 버전으로 월드 와이드 웹의 핵심 마크업 언어이다. 2004년 7월 Web Hypertext Application Technology Working Group(WHATWG)에서 웹 애플리케이션 1.0이라는 이름으로 세부 명세 작업을 시작하였다.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="inner none_type">
+              <img src="img/mytool/img02.png" alt="img02">
+              <h3>css3</h3>
+              <p>종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰인다. 마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="inner none_type">
+              <img src="img/mytool/img03.png" alt="img03">
+              <h3>javascript</h3>
+              <p>자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="inner none_type">
+              <img src="img/mytool/img04.png" alt="img04">
+              <h3>sass/ css Preprocessor</h3>
+              <p>Sass는 종속형 시트(CSS)로 해석 및 컴파일되는 스크립트 언어이다. SassScript는 그 자체로 스크립트 언어이다. 규칙 분리를 위해 들여쓰기를 사용하여 코드 블록과 새줄 문자를 구분한다. "SCSS"는 CSS의 것과 비슷한 블록 형식을 사용한다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="myskill">
+        <div class="row">
+          <h2>My Skill</h2>
+          <div class="column">
+            <!-- progress bar -->
+            <div class="inner none_type progressbar">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="items_wrap">
+                <div class="items">
+                  <div class="title">HTML5</div>
+                  <div class="percent">95%</div>
+                </div>
+              </div>
+              <div class="items_wrap">
+                <div class="items">
+                  <div class="title">CSS3</div>
+                  <div class="percent">90%</div>
+                </div>
+              </div>
+              <div class="items_wrap">
+                <div class="items">
+                  <div class="title">Javascript/Jquery</div>
+                  <div class="percent">65%</div>
+                </div>
+              </div>
+              <div class="items_wrap">
+                <div class="items">
+                  <div class="title">SASS</div>
+                  <div class="percent">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer_top">
+        <!-- footer 상단영역 -->
+        <div class="container">
+          <div class="row">
+            <div class="column footer_logo">
+              <!-- footerlogo -->
+              <h3>Logo</h3>
+            </div>
+            <div class="column">
+              <!-- site map -->
+              <h4>site map</h4>
+              <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#myprofile">My Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#mytool">My Tool</a></li>
+                <li><a href="#myskill">My Skill</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <!-- contact us -->
+              <h4>contact us</h4>
+              <p>
+                30, Haksan-ro <br>
+                Dalseo-gu, Deagu <br>
+                Republic of Korea <br>
+                <strong>phone&nbsp;:&nbsp;</strong><a href="tel:+82-010-5623-7821">+82-010-5623-7821</a><br>
+                <strong>Email&nbsp;:&nbsp;</strong><a href="mailto:audry637@naver.com">mymail@naver.com</a><br>
+              </p>
+            </div>
+            <div class="column news">
+              <!-- news -->
+              <h4>news</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+              <form action="">
+                <input type="search" name="search"><input type="submit" value="search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <!-- footer 하단영역 -->
+        <div class="copyright">
+          ⓒcoyright <strong>mypage</strong> .All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed By <a href="mailto:audry637@naver.com">My self</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
