@@ -69,7 +69,7 @@ input[type=checkbox]#gnbcheck{display: none;}
   top: 16px;
   height: 1.6px;
   width: 32px; /*width:100% / left:0; right:0;해도 결과 같음*/
-  background: white;
+  background: #666;
   transform: translateY(-50%);
 }
 
@@ -155,8 +155,8 @@ section{
   box-sizing: border-box; /*padding이 들어가거나 할 수도 있으므로*/
 }
 
-section:nth-child(odd){
-  background: #f9f9f9;
+section:nth-child(even){
+  background: #fbfbfb;
 }
 
 section#intro{
@@ -194,11 +194,12 @@ section > article > p{
   color: #666;
   margin: 50px 0;
   font-family: 'Poor Story', cursive;
-  /* font-family: 'Nanum Gothic', sans-serif; */
+  word-break: keep-all;
+  line-height: 36px;
 }
 
 section#myprofile{
-  background: url('../img/bg/about_bg.jpg') no-repeat;
+  background: url('../img/bg/profile_bg.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -207,15 +208,19 @@ section .row .column .inner{
 }
 
 section:nth-of-type(1) .row{
-  top: 70px;
+  top: 65px;
 }
 
 section:nth-of-type(2) .row{
-  top: 30px;
+  top: 70px;
 }
 
 section:nth-of-type(3) .row{
-  top: 50px;
+  top: 70px;
+}
+
+section:nth-of-type(4) .row{
+  top: 20px;
 }
 
 section#myprofile .row{
@@ -226,6 +231,10 @@ section#myprofile .row{
 section#myprofile .row .column .inner .job{
   color: #999;
   font-size: 14px;
+}
+
+section#myprofile .row .column .inner p{
+  margin-top: 30px;
 }
 
 section#myprofile .row .column .inner img{
@@ -240,17 +249,31 @@ section#myprofile:before{
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.8);
   z-index: 9;
 }
 
 section#portfolio .row .column .inner p{
   text-align: left;
+  font-family: 'Nanum Gothic', sans-serif;
+  min-height: 150px;
+}
+
+section#portfolio .row .column .inner p strong{
+  line-height: 36px;
+}
+
+section#portfolio .row .column .inner p a{
+  color: #333;
+}
+
+section#portfolio .row .column .inner p a:hover{
+  color: #999;
+  font-weight: 600;
 }
 
 section#portfolio .row .column .inner img{
   border-radius: 5px;
-  height: 200px;
 }
 
 section#portfolio .row .column .inner h2{
@@ -264,18 +287,40 @@ section#myskill{
   background-attachment: fixed;
 }
 
+section#myskill:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9;
+}
+
 section#myskill .row > h2,section#myskill .row .column .inner p{
   color: white;
 }
 
+section#myskill .row .column .inner p{
+  margin-bottom: 100px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 section#mytool .row .column .inner p{
   line-height: 26px;
-  height: 100px;
+  min-height: 300px;
   word-break: keep-all;
+  font-size: 14px;
+}
+
+section#mytool .row .column .inner h3{
+  font-size: 21px;
 }
 
 section#mytool .row .column{
   margin-top: -30px;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 section .row .column .inner.none_type{
@@ -466,19 +511,27 @@ section .row .column .inner img{
 
 /*------------button---------------------------------------------------------------------------------------------------------------------------*/
 #footer{
-  background: #000;
-  color: white;
+  background: #f6f4f3;
+  color: #666;
   font-size: 14px;
 }
 
 #footer .footer_top{
-  background: #111;
+  background: #f6f4f3;
   padding: 60px 0 30px;
 }
 
 #footer .container{ /*.footer_top의 자식요소인 .container와 #footer의 자식요소인 .container의 공통 스타일 적용*/
   margin: 0 auto;
   width: 1140px;
+}
+
+#footer .container a{
+  color: #666;
+}
+
+#footer .container a:hover{
+  color: #d29718;
 }
 
 #footer > .container{
@@ -499,6 +552,18 @@ section .row .column .inner img{
   margin-bottom: 30px;
 }
 
+#footer .container .row .column .flex_wrap{
+  display: flex;
+}
+
+#footer .container .row .column .flex{
+  text-align: center;
+}
+
+#footer .container .row .column .flex img{
+  width: 60%;
+}
+
 #footer .container .row .column.footer_logo h3{
   font-size: 34px;
   margin: 0 0 20px 0;
@@ -513,7 +578,7 @@ section .row .column .inner img{
   position: relative;
   font-size: 14px;
   font-weight: 700;
-  color: white;
+  color: #666;
   text-transform: uppercase;
   padding-bottom: 12px;
   margin-bottom: 20px;
@@ -529,7 +594,7 @@ section .row .column .inner img{
 
 #footer .container .row .column h4::before{
   right: 0; /*width: 100%도 가능(똑같은 결과), absolute기 때문에 left:0; right:0으로 너비 잡는게 가능(fixed도 가능)*/
-  background: #555;
+  background: #dedcdc;
 }
 
 #footer .container .row .column h4::after{
@@ -538,7 +603,7 @@ section .row .column .inner img{
 }
 
 #footer .container .row .column ul li{
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #dedcdc;
   padding: 10px 0;
 }
 
@@ -548,22 +613,6 @@ section .row .column .inner img{
 
 #footer .container .row .column p{
   line-height: 26px;
-}
-
-#footer .container .row .column.news input[type=search]{
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
-}
-
-#footer .container .row .column.news input[type=submit]{
-  background: #d29718;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: white;
-  cursor: pointer;
 }
 
 /*------------반응형 css---------------------------------------------------------------------------------------------------------------------------*/
@@ -583,6 +632,9 @@ section .row .column .inner img{
 }
 
 @media screen and ( max-width: 767px ){
+  #header{
+    background: none;
+  }
   section .row .column{
     flex: 100%;
   }
