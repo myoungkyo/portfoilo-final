@@ -256,11 +256,17 @@ section#myprofile:before{
 section#portfolio .row .column .inner p{
   text-align: left;
   font-family: 'Nanum Gothic', sans-serif;
-  min-height: 150px;
+  min-height: 250px;
 }
 
 section#portfolio .row .column .inner p strong{
   line-height: 36px;
+}
+
+section#portfolio .row .column .inner p span{
+  word-break: keep-all;
+  line-height: 26px;
+  font-size: 14px;
 }
 
 section#portfolio .row .column .inner p a{
@@ -303,13 +309,13 @@ section#myskill .row > h2,section#myskill .row .column .inner p{
 }
 
 section#myskill .row .column .inner p{
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
 section#mytool .row .column .inner p{
   line-height: 26px;
-  min-height: 300px;
+  min-height: 180px;
   word-break: keep-all;
   font-size: 14px;
 }
@@ -319,6 +325,7 @@ section#mytool .row .column .inner h3{
 }
 
 section#mytool .row .column{
+  flex: 33.333333%;
   margin-top: -30px;
   font-family: 'Nanum Gothic', sans-serif;
 }
@@ -447,6 +454,14 @@ section .row > h2::after{
   background: #abeb17;
 }
 
+.progressbar .items_wrap:nth-of-type(5) .items{
+  background: #17ebda;
+}
+
+.progressbar .items_wrap:nth-of-type(6) .items{
+  background: #17adeb;
+}
+
 section .row{
   opacity: 0;
   transform: translateY(1000px); /*작동해주면 transition 꼭 걸어주기*/
@@ -467,17 +482,27 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(1) .items
 
 section.active .row .column .inner.progressbar .items_wrap:nth-of-type(2) .items{
   width: 90%;
-  transition: 1s .25s; /*delay값 추가*/
+  transition: 1s .16s; /*delay값 추가*/
 }
 
 section.active .row .column .inner.progressbar .items_wrap:nth-of-type(3) .items{
-  width: 65%;
-  transition: 1s .5s;
+  width: 60%;
+  transition: 1s .32s;
 }
 
 section.active .row .column .inner.progressbar .items_wrap:nth-of-type(4) .items{
+  width: 65%;
+  transition: 1s .48s;
+}
+
+section.active .row .column .inner.progressbar .items_wrap:nth-of-type(5) .items{
   width: 80%;
-  transition: 1s .75s;
+  transition: 1s .64s;
+}
+
+section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items{
+  width: 80%;
+  transition: 1s .8s;
 }
 
 /* myprofile */
