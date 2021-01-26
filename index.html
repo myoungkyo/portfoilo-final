@@ -13,6 +13,14 @@
     <script src="js/prefix.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
+    <script type="text/javascript">
+      window.onload = function(){
+        var browse = navigator.userAgent.toLowerCase();
+        if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (browse.indexOf("msie") != -1)){
+          alert("Chrome 사용을 권장합니다.");
+        }
+      };
+    </script>
   </head>
 
   <body>
