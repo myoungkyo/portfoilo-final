@@ -195,10 +195,6 @@ section > article{
   -ms-flex-direction: column;
 }
 
-section > article::-ms{
-  height: 100vh;
-}
-
 section > article > h2{
   font-size: 60px;
   color: #000;
