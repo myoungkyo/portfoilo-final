@@ -228,6 +228,7 @@ section:nth-of-type(1) .row .column,section:nth-of-type(4) .row .column{
 section#myprofile .row{
   box-sizing: border-box;
   padding: 100px 0;
+  -ms-transform: translateY(70px);
 }
 
 section#myprofile .row .column .inner .job{
@@ -253,6 +254,10 @@ section#myprofile:before{
   bottom: 0;
   background: rgba(255,255,255,0.8);
   z-index: 9;
+}
+
+section#portfolio .row{
+  -ms-transform: translateY(70px);
 }
 
 section#portfolio .row .column .inner p{
@@ -303,6 +308,10 @@ section#myskill:before{
   bottom: 0;
   background: rgba(0,0,0,0.6);
   z-index: 9;
+}
+
+section#myskill .row{
+  -ms-transform: translateY(70px);
 }
 
 section#myskill .row > h2,section#myskill .row .column .inner p{
