@@ -188,6 +188,15 @@ section > article{
   position: relative;
   text-align: center;
   padding: 0 20% 5%;
+  -ms-transform: translate(0,50%);
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -ms-flex-direction: column;
+}
+
+section > article::-ms{
+  height: 100vh;
 }
 
 section > article > h2{
@@ -567,6 +576,7 @@ section .row .column .inner img{
 
 #footer .container .row .column{
   flex: 25%;
+  -ms-flex: 23%;
   box-sizing: border-box;
   padding: 0 10px;
   margin-bottom: 30px;
