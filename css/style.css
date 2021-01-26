@@ -678,6 +678,10 @@ section .row .column .inner img{
   section .row .column{
     flex: 50%;
   }
+  section#portfolio .row .column{
+    flex-grow: 0;
+  }
+  
   section#myprofile .row .column .inner img{
     width: 30%;
   }
